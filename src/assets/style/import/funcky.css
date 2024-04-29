@@ -1,0 +1,21 @@
+/* 
+::selection {
+    color: theme('colors.white');
+    background: theme('colors.morning');
+  }
+  
+  Scroll
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  ::-webkit-scrollbar-track {
+    background: theme('colors.liteorange');
+  }
+  ::-webkit-scrollbar-thumb {
+    background: theme('colors.morning');
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: theme('colors.morning');
+  }
+  */
