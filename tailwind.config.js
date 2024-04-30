@@ -4,7 +4,10 @@ export default {
   theme: {
     extend: {
       colors:{
-        white:"#fff"
+        junior:"#141414"
+      },
+      backgroundImage: {
+        'banner-img': "url('./images/banner Design.svg')",
       }
     },
   },
