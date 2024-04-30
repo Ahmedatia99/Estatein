@@ -6,10 +6,10 @@
   body {
     padding: 0;
     margin: 0;
-    font-family: "Be Vietnam Pro", sans-serif;
+    font-family: "Urbanist", sans-serif;
     /* background-color: theme(""); */
-    background-color: black;
-    color: theme("colors.white");
+    /* background-color: black; */
+    /* color: theme("colors.white"); */
   }
   a {
     text-decoration: none;
