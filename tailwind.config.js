@@ -6,7 +6,8 @@ export default {
       colors:{
         junior:"#1A1A1A",
         senior:"#141414",
-        stroke:"#262626"
+        stroke:"#262626",
+        purple:"#703BF7"
       },
       backgroundImage: {
         'banner-img': "url('./images/banner Design.svg')",
