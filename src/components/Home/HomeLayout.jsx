@@ -1,9 +1,10 @@
 import React from 'react'
-// import Banner from "../atoms/Banner"
+import Navbar from "../atoms/Navbar"
 export default function HomeLayout() {
   return (
     <main>
         <section className="">
+          <Navbar />
         </section>
     </main>
 )

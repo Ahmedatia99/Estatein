@@ -1,9 +1,9 @@
 import React from "react";
-import { Button } from "../atoms/Button/Button";
+// import { Button } from "../atoms/Button/Button";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import classNames from "classnames";
-import { IoMenu } from "react-icons/io5";
+// import { IoMenu } from "react-icons/io5";
 import { FiX } from "react-icons/fi";
 
 export default function Navbar() {
@@ -29,15 +29,15 @@ export default function Navbar() {
             </Link>
             <div className="flex justify-center items-center">
               <div className="hidden px-5 desktop:hidden tablet:hidden mobile:flex labtob:hidden ">
-                <Button variant="second" action="Sign Up" />
-                <Button variant="primary" action="Login" />
+                {/* <Button variant="second" action="Sign Up" />
+                <Button variant="primary" action="Login" /> */}
               </div>
               <div className="md:hidden tablet:order-2 ">
                 <button
                   className="p-2 text-light rounded outline-none focus:border-gray-400 focus:border"
                   onClick={() => setNavbar(!navbar)}
                 >
-                  {navbar ? <FiX /> : <IoMenu />}
+                  {navbar ? <FiX /> : ""}
                 </button>
               </div>
             </div>
@@ -119,12 +119,12 @@ export default function Navbar() {
         </div>
         {/* login-3 */}
         <div className="flex desktop:flex tablet:flex mobile:hidden labtob:flex">
-          <Button variant="second" action="SignUp" paddingname="desktop:px-5 desktop:py-3 md:p-2 sm:p-2" />
+          {/* <Button variant="second" action="SignUp" paddingname="desktop:px-5 desktop:py-3 md:p-2 sm:p-2" />
           <Button
             variant="primary"
             action="Login"
             paddingname="desktop:px-5 desktop:py-3 md:p-2 sm:p-2"
-          />
+          /> */}
         </div>
         {/* button menu*/}
       </section>
