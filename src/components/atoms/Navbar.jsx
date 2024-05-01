@@ -3,7 +3,7 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import classNames from "classnames";
-// import { IoMenu } from "react-icons/io5";
+import { IoMenu } from "react-icons/io5";
 import { FiX } from "react-icons/fi";
 
 export default function Navbar() {
@@ -15,16 +15,16 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="  w-full text-textcook flex justify-center xl-text-base md:text-sm mobile:text-sm">
+    <nav className="  w-full text-white flex justify-center xl-text-base md:text-sm mobile:text-sm bg-junior">
       <section className="container flex items-center justify-between w-full px-3 ">
         <div className="px-4 md:items-center md:flex w-full">
           {/* LOGO 1 */}
-          <div className="flex items-center justify-between py-3 md:py-5 md:block3 tablet:justify-between ">
-            <Link className="flex">
+          <div className="flex items-center justify-between py-0 md:py-0 md:block3 tablet:justify-between ">
+            <Link className="flex p-0">
               <img
                 src={"/images/Logo.svg"}
                 alt="studysphere"
-                className="xl:px-3 md:px-0"
+                className="w-28 h-20"
               />
             </Link>
             <div className="flex justify-center items-center">
@@ -37,7 +37,7 @@ export default function Navbar() {
                   className="p-2 text-light rounded outline-none focus:border-gray-400 focus:border"
                   onClick={() => setNavbar(!navbar)}
                 >
-                  {navbar ? <FiX /> : ""}
+                  {navbar ? <FiX /> : <IoMenu />}
                 </button>
               </div>
             </div>
@@ -54,7 +54,7 @@ export default function Navbar() {
                   onClick={() => handleClick("home")}
                   className={classNames(
                     activeLink === "home"
-                      ? "drop-shadow-lg bg-tasting lg:p-3 xl:p-5 md:p-2 mobile:p-0 flex items-center justify-center"
+                      ? "drop-shadow-lg bg-senior border-2 border-stroke py-4 px-6 mobile:p-0 flex items-center justify-center"
                       : "lg:p-3 xl:p-5  mobile:p-0"
                   )}
                   to={"/"}
@@ -67,7 +67,7 @@ export default function Navbar() {
                   onClick={() => handleClick("courses")}
                   className={classNames(
                     activeLink === "courses"
-                      ? "drop-shadow-lg bg-tasting lg:p-3 xl:p-5 md:p-3 mobile:p-0"
+                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6 mobile:p-0"
                       : "lg:p-3 xl:p-5  mobile:p-0"
                   )}
                   to={"/courses"}
@@ -80,7 +80,7 @@ export default function Navbar() {
                   onClick={() => handleClick("about")}
                   className={classNames(
                     activeLink === "about"
-                      ? "drop-shadow-lg bg-tasting lg:p-3 xl:p-5 md:p-3 mobile:p-0 flex items-center justify-center"
+                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6 mobile:p-0 flex items-center justify-center"
                       : "lg:p-3 xl:p-5  mobile:p-0"
                   )}
                   to={"/about"}
@@ -94,7 +94,7 @@ export default function Navbar() {
                   onClick={() => handleClick("pricing")}
                   className={classNames(
                     activeLink === "pricing"
-                      ? "drop-shadow-lg bg-tasting lg:p-3 xl:p-5 md:p-3 mobile:p-0 flex items-center justify-center"
+                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6  mobile:p-0 flex items-center justify-center"
                       : "lg:p-3 xl:p-5  mobile:p-0"
                   )}
                 >
@@ -107,7 +107,7 @@ export default function Navbar() {
                   onClick={() => handleClick("contact")}
                   className={classNames(
                     activeLink === "contact"
-                      ? "drop-shadow-lg bg-tasting lg:p-3 xl:p-5 md:p-3 mobile:p-0 flex items-center justify-center"
+                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6  mobile:p-0 flex items-center justify-center"
                       : "lg:p-3 xl:p-5  mobile:p-0"
                   )}
                 >

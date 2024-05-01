@@ -4,7 +4,9 @@ export default {
   theme: {
     extend: {
       colors:{
-        junior:"#141414"
+        junior:"#1A1A1A",
+        senior:"#141414",
+        stroke:"#262626"
       },
       backgroundImage: {
         'banner-img': "url('./images/banner Design.svg')",

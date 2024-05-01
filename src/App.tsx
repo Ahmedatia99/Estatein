@@ -6,13 +6,14 @@ import About from "./pages/About.jsx";
 import Properties from "./pages/Properties.jsx";
 import Contact from "./pages/Contact.jsx";
 import Service from "./pages/Service.jsx";
-
+import Navbar from "./components/atoms/Navbar.jsx"
  
 import Banner from "./components/atoms/Banner.jsx";
 function App() {
   return (
     <main>
       <Banner />
+      <Navbar />
       <Routes>
         <Route path="/" element={<DefaultLayout />}>
           <Route path="/" element={<Home />} />
