@@ -58,7 +58,7 @@ export default function Navbar() {
                   className={classNames(
                     activeLink === "home"
                       ? "drop-shadow-lg bg-senior border-2 border-stroke py-4 px-6 mobile:p-0 flex items-center justify-center"
-                      : "lg:p-3 xl:p-5  mobile:p-0"
+                      : "py-4 px-6  mobile:p-0"
                   )}
                   to={"/"}
                 >
@@ -128,7 +128,6 @@ export default function Navbar() {
             paddingname="desktop:px-5 desktop:py-3 md:px-5 md:py-3 sm:p-2 border-stroke border-2"
           />
         </div>
-        {/* button menu*/}
       </section>
     </nav>
   );
