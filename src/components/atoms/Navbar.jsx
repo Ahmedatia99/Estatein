@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <nav className="  w-full text-white flex justify-center xl-text-base md:text-sm mobile:text-sm bg-junior">
-      <section className="container flex items-center justify-between w-full px-3 ">
+      <section className="container flex items-center justify-between w-full px-5 ">
         <div className="pr-4 md:items-center md:flex w-full">
           {/* LOGO 1 */}
           <div className="flex items-center justify-between py-0 md:py-0 md:block3 tablet:justify-between ">
