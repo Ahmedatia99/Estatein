@@ -16,7 +16,7 @@ export const Button = ({
 }: ButtonProps) => {
   const variants = {
     primary: " bg-purple text-white",
-    second: "bg-senior  text-white ",
+    second: "bg-senior  text-white border-stroke border-2",
     greedy: "bg-litewhite text-textcook",
   }[variant];
 

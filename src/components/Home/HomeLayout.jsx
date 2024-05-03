@@ -1,10 +1,11 @@
-import React from 'react'
+import React from "react";
+import Header from "./atom/Header";
 export default function HomeLayout() {
   return (
     <main>
-        <section className="">
-          
-        </section>
+      <section>
+        <Header />
+      </section>
     </main>
-)
+  );
 }
