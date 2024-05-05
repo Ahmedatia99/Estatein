@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "../../atoms/Button/Button.tsx";
 // import { GoArrowUpRight } from "react-icons/go";
-
 export default function Header() {
   return (
     <div className="container mx-auto grid grid-cols-2 bg-senior gap-14 ">
