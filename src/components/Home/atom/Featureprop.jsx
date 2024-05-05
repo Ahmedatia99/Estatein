@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
 
 export default function Featureprop() {
   return (
     <main>
-        <section>
-            
-        </section>
+      <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
     </main>
-  )
+  );
 }
