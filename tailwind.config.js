@@ -9,6 +9,7 @@ export default {
         stroke:"#262626",
         purple:"#703BF7",
         tasting:"#999999",
+        ruby:"#666666",
         guide:"#4D4D4D"
       },
       backgroundImage: {
