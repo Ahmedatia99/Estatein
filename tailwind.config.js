@@ -8,7 +8,8 @@ export default {
         senior:"#141414",
         stroke:"#262626",
         purple:"#703BF7",
-        tasting:"#999999"
+        tasting:"#999999",
+        guide:"#4D4D4D"
       },
       backgroundImage: {
         'banner-img': "url('./images/banner Design.svg')",
