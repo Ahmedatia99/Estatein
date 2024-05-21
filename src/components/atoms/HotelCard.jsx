@@ -10,7 +10,7 @@ export default function HotelCard() {
     <section className="grid grid-cols-3 gap-5">
       {data.map((el) => {
         return (
-          <div className="p-8 border-2 border-stroke rounded-xl">
+          <div className="p-8 border-2 border-stroke rounded-xl" key={el.id}>
             <img src={el.img} className="rounded-xl" />
             <h2 className="text-xl mt-5 mb-1 font-semibold">{el.name}</h2>
             <p className="text-tasting text-base">{el.info}</p>
