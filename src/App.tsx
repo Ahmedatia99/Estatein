@@ -7,7 +7,6 @@ import Properties from "./pages/Properties.jsx";
 import Contact from "./pages/Contact.jsx";
 import Service from "./pages/Service.jsx";
 import Navbar from "./components/atoms/Navbar.jsx"
- 
 import Banner from "./components/atoms/Banner.jsx";
 function App() {
   return (
