@@ -24,7 +24,7 @@ export default function Navbar() {
               <img
                 src={"/images/Logo.svg"}
                 alt="studysphere"
-                className="w-28 h-20"
+                className="w-28 h-20 mobile:w-16 mobile:h-16"
               />
             </Link>
             <div className="flex justify-center items-center">
@@ -32,15 +32,15 @@ export default function Navbar() {
                 <Button
                   variant="primary"
                   action="Contact US"
-                  paddingname="text-white"
+                  paddingname="text-white mobile:hidden"
                 />
               </div>
               <div className="md:hidden tablet:order-2 ">
                 <button
-                  className="p-2 rounded outline-none focus:border-gray-400 focus:border"
+                  className="p-2 mobile:p-0 rounded outline-none focus:border-gray-400 focus:border"
                   onClick={() => setNavbar(!navbar)}
                 >
-                  {navbar ? <FiX /> : <IoMenu />}
+                  {navbar ? <IoMenu size={20} /> : <FiX size={20} />}
                 </button>
               </div>
             </div>
@@ -48,7 +48,7 @@ export default function Navbar() {
           {/* ul -2*/}
           <div
             className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 sm:mt-3 order-2 ${
-              navbar ? "block display" : "hidden"
+              navbar ? "hidden" : "block display"
             }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 ">
