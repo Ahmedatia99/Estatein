@@ -43,5 +43,14 @@
         "bedroom": 2,
         "bathroom": 3,
         "price": "550,000"
+    },
+    {
+        "id": 6,
+        "name": "Seaside Serenity Villa",
+        "img": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGhvdGVsfGVufDB8fDB8fHww",
+        "info": "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood",
+        "bedroom": 2,
+        "bathroom": 3,
+        "price": "550,000"
     }
 ]

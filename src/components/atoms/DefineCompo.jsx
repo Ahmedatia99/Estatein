@@ -7,16 +7,16 @@ export default function DefineCompo(props) {
   return (
     <div className="">
       <div className="flex items-center mb-3">
-        <LuSparkle className="text-3xl text-ruby" />
-        <LuSparkle className="text-2xl text-[#333]"/>
-        <LuSparkle className="text-1xl text-[#333]"/>
+        <LuSparkle className="tablet:text-3xl mobile:text-2xl text-ruby" />
+        <LuSparkle className="tablet:text-2xl mobile:text-xl text-[#333]"/>
+        <LuSparkle className="tablet:text-xl mobile:text-lg text-[#333]"/>
       </div>
       <div className="flex justify-between flex-wrap items-center">
         <div>
           <h2
             className={classNames(
               ` font-semibold text-textcook ${
-                props.value ? "text-4xl mb-4" : " mb-1"
+                props.value ? "tablet:text-4xl mobile:text-2xl mb-4" : " mb-1"
               }`
             )}
           >
@@ -25,7 +25,7 @@ export default function DefineCompo(props) {
 
           <p
             className={classNames(
-              `text-tasting laptop:text-base mobile:text-sm mb-1 ${
+              `text-tasting tablet:text-base mobile:text-sm mb-1 ${
                 props.value ? "max-w-4xl" : "max-w-4xl"
               }`
             )}
