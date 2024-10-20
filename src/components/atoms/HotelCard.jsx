@@ -5,29 +5,50 @@ import { FaBath } from "react-icons/fa";
 import { HiMiniBuildingOffice } from "react-icons/hi2";
 import { Button } from "./Button/Button.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "../../assets/style/main.css";
 
 import "swiper/css";
 import "swiper/css/pagination";
-
 import { Pagination } from "swiper/modules";
 
 export default function HotelCard() {
   const pagination = {
     clickable: true,
     renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
+      return '<span class="' + className + '">' + (index + 1) + '</span>';
     },
   };
-
   return (
     <section className="container mx-auto">
       <Swiper
         slidesPerView={3}
-        spaceBetween={30}
-
+        spaceBetween={10}
         pagination={pagination}
         modules={[Pagination]}
         className="mySwiper"
+        
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          420: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1025: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          12769: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        }}
       >
         {data.map((el) => {
           return (
