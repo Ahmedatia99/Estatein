@@ -25,8 +25,8 @@ export default function Header() {
           />
         </div>
         <div className="flex tablet:flex-row mobile:flex-col">
-          <div className="flex tablet:items-stretch mobile:items-center mobile:justify-center">
-            <div className="flex flex-col bg-junior border-stroke border-2 px-5 py-4 mr-3 rounded-xl items-center">
+          <div className="flex tablet:items-center mobile:items-center mobile:justify-center">
+            <div className="flex flex-col bg-junior border-stroke border-2 laptop:px-5 laptop:py-4 tablet:px-3 tablet:py-2 mobile:px-5 mobile:py-4 mr-3 rounded-xl items-center">
               <h2 className="tablet:text-3xl mobile:text-xl text-white mb-1 font-bold">
                 200+
               </h2>

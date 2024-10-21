@@ -52,26 +52,26 @@ export default function HotelCard() {
         {data.map((el) => {
           return (
             <SwiperSlide
-              className="desktop:p-8 labtop:p-6 mobile:p-4 border-2  border-stroke rounded-xl"
+              className="laptop:p-8 mobile:p-4 border-2  border-stroke rounded-xl"
               key={el.id}
             >
               <img src={el.img} className="rounded-xl" />
               <h2 className="text-xl mt-5 mb-1 font-semibold">{el.name}</h2>
               <p className="text-tasting text-base">{el.info}</p>
               {/* icons */}
-              <div className="flex desktop:justify-around tablet:justify-start items-center flex-wrap my-6 ">
+              <div className="flex  laptop:justify-center tablet:justify-start items-center flex-wrap my-6 ">
                 <div className="flex justify-center items-center">
-                  <div className="py-2  desktop:mr-4 mobile:mr-1 tablet:px-4 mobile:px-3 border-2 border-stroke bg-senior rounded-3xl flex items-center">
+                  <div className="py-2  laptop:mr-2 mobile:mr-1 laptop:px-2 tablet:px-4 mobile:px-3 border-2 border-stroke bg-senior rounded-3xl flex items-center">
                     <IoBed />
                     <span className="ml-1">{el.bedroom}-Bedroom</span>
                   </div>
-                  <div className="py-2 labtop:px-4 tablet:px-2 mobile:px-3 border-2 border-stroke bg-senior rounded-3xl flex items-center">
+                  <div className="py-2 laptop:px-2 tablet:px-2 mobile:px-3 border-2 border-stroke bg-senior rounded-3xl flex items-center">
                     <FaBath />
                     <span className="ml-1">{el.bathroom}-Bathroom</span>
                   </div>
                 </div>
-                <div class="flex justify-start items-center">
-                  <div className=" desktop:mt-0 tablet:mt-3 mobile:mt-2 py-2 tablet:px-4 mobile:px-3 border-2 border-stroke bg-senior rounded-3xl flex items-center">
+                <div class="flex justify-center  items-center">
+                  <div className=" laptop:mt-0 laptop:ml-2 tablet:mt-3 mobile:mt-2 py-2 laptop:px-3 tablet:px-4 mobile:px-3 border-2 border-stroke bg-senior rounded-3xl flex items-center">
                     <HiMiniBuildingOffice />
                     <span className="ml-1">Villa</span>
                   </div>
@@ -85,7 +85,7 @@ export default function HotelCard() {
                 </div>
                 <Button
                   action="View Property Details"
-                  paddingname="desktop:px-10 desktop:py-4 tablet:px-5 tablet:py-2 mobile:px-4 mobile:py-2 mt-3 tablet:mr-0"
+                  paddingname="laptop:px-10 laptop:py-4 tablet:px-5 tablet:py-2 mobile:px-4 mobile:py-2 mt-3 tablet:mr-0"
                   variant="primary"
                 />
               </div>

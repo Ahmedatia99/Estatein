@@ -28,7 +28,7 @@ export default function Navbar() {
               />
             </Link>
             <div className="flex justify-center items-center">
-              <div className="hidden px-5 desktop:hidden tablet:hidden mobile:flex labtob:hidden ">
+              <div className="hidden px-5 laptop:hidden tablet:hidden mobile:flex labtob:hidden ">
                 <Button
                   variant="primary"
                   action="Contact US"
@@ -121,11 +121,11 @@ export default function Navbar() {
           </div>
         </div>
         {/* login-3 */}
-        <div className="flex desktop:flex tablet:flex mobile:hidden labtob:flex">
+        <div className="flex laptop:flex tablet:flex mobile:hidden labtob:flex">
           <Button
             variant="second"
             action="ContactUs"
-            paddingname="desktop:px-5 desktop:py-3 md:px-5 md:py-3 sm:p-2 border-stroke border-2"
+            paddingname="laptop:px-5 laptop:py-3 md:px-5 md:py-3 sm:p-2 border-stroke border-2"
           />
         </div>
       </section>
