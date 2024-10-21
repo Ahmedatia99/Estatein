@@ -15,7 +15,7 @@ export default function HotelCard() {
   const pagination = {
     clickable: true,
     renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + '</span>';
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
     },
   };
   return (
@@ -26,7 +26,6 @@ export default function HotelCard() {
         pagination={pagination}
         modules={[Pagination]}
         className="mySwiper"
-        
         breakpoints={{
           320: {
             slidesPerView: 1,
@@ -53,26 +52,32 @@ export default function HotelCard() {
         {data.map((el) => {
           return (
             <SwiperSlide
-              className="p-8 border-2  border-stroke rounded-xl"
+              className="desktop:p-8 labtop:p-6 mobile:p-4 border-2  border-stroke rounded-xl"
               key={el.id}
             >
               <img src={el.img} className="rounded-xl" />
               <h2 className="text-xl mt-5 mb-1 font-semibold">{el.name}</h2>
               <p className="text-tasting text-base">{el.info}</p>
-              <div className="flex justify-around items-center flex-wrap my-6 ">
-                <div className="py-2 tablet:px-4 border-2 border-stroke bg-senior rounded-3xl flex items-center">
-                  <IoBed />
-                  <span className="ml-1">{el.bedroom}-Bedroom</span>
+              {/* icons */}
+              <div className="flex desktop:justify-around tablet:justify-start items-center flex-wrap my-6 ">
+                <div className="flex justify-center items-center">
+                  <div className="py-2  desktop:mr-4 mobile:mr-1 tablet:px-4 mobile:px-3 border-2 border-stroke bg-senior rounded-3xl flex items-center">
+                    <IoBed />
+                    <span className="ml-1">{el.bedroom}-Bedroom</span>
+                  </div>
+                  <div className="py-2 labtop:px-4 tablet:px-2 mobile:px-3 border-2 border-stroke bg-senior rounded-3xl flex items-center">
+                    <FaBath />
+                    <span className="ml-1">{el.bathroom}-Bathroom</span>
+                  </div>
                 </div>
-                <div className="py-2 tablet:px-4 border-2 border-stroke bg-senior rounded-3xl flex items-center">
-                  <FaBath />
-                  <span className="ml-1">{el.bathroom}-Bathroom</span>
-                </div>
-                <div className="py-2 tablet:px-4 border-2 border-stroke bg-senior rounded-3xl flex items-center">
-                  <HiMiniBuildingOffice />
-                  <span className="ml-1">Villa</span>
+                <div class="flex justify-start items-center">
+                  <div className=" desktop:mt-0 tablet:mt-3 mobile:mt-2 py-2 tablet:px-4 mobile:px-3 border-2 border-stroke bg-senior rounded-3xl flex items-center">
+                    <HiMiniBuildingOffice />
+                    <span className="ml-1">Villa</span>
+                  </div>
                 </div>
               </div>
+              {/* end icons */}
               <div className="flex justify-between items-center">
                 <div>
                   <span className="text-tasting">Price</span>
@@ -80,7 +85,7 @@ export default function HotelCard() {
                 </div>
                 <Button
                   action="View Property Details"
-                  paddingname="px-10 py-4"
+                  paddingname="desktop:px-10 desktop:py-4 tablet:px-5 tablet:py-2 mobile:px-4 mobile:py-2 mt-3 tablet:mr-0"
                   variant="primary"
                 />
               </div>
