@@ -1,10 +1,19 @@
 import React from "react";
 import DefineCompo from "../../atoms/DefineCompo";
+import CommentCard from "../../atoms/CommentCard"
+
 export default function Comments() {
   return (
     <main>
-      <section className="">
-        <DefineCompo title="What Our Clients Say" description="Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs." value="true" />
+      <section className="container mx-auto">
+        <DefineCompo
+          title="What Our Clients Say"
+          description="Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs."
+          value="true"
+        />
+      </section>
+      <section className="pt-8">
+        <CommentCard />
       </section>
     </main>
   );
