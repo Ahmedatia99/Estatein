@@ -70,7 +70,7 @@ export default function HotelCard() {
                     <span className="ml-1">{el.bathroom}-Bathroom</span>
                   </div>
                 </div>
-                <div class="flex justify-center  items-center">
+                <div className="flex justify-center  items-center">
                   <div className=" laptop:mt-0 laptop:ml-2 tablet:mt-3 mobile:mt-2 py-2 laptop:px-3 tablet:px-4 mobile:px-3 border-2 border-stroke bg-senior rounded-3xl flex items-center">
                     <HiMiniBuildingOffice />
                     <span className="ml-1">Villa</span>

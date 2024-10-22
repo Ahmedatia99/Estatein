@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <div className="container mx-auto grid tablet:grid-cols-2 bg-senior gap-14 mobile:grid-cols-1 ">
       <div className="taplet:py-20 mobile:py-0 tablet:order-1 mobile:order-2">
-        <h2 className="lg:text-5xl mobile:text-3xl  tablet:py-5 mobile:py-3 font-semibold text-white max-w-xl leading-normal ">
+        <h2 className="lg:text-5xl mobile:text-3xl tablet:py-5 mobile:py-3 font-semibold text-white max-w-xl leading-normal ">
           Discover Your Dream Property with Estatein
         </h2>
         <p className="text-base font-medium text-tasting tablet:text-base mobile:text-xs">
