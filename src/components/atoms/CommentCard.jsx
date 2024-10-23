@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { FaStar } from "react-icons/fa";
@@ -7,9 +6,33 @@ import "swiper/css/pagination";
 import "../../assets/style/main.css";
 
 const CommentCard = () => {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const data = [
+    {
+      id: 1,
+      name: "Wade Warren",
+      location: "USA, California",
+      title: "Exceptional Service!",
+      body: "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!",
+      img: "./images/people/comment1.png",
+    },
+    {
+      id: 2,
+      name: "Emelie Thomson",
+      location: "USA, Florida",
+      title: "Efficient and Reliable",
+      body: "Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results, thanks.",
+      img: "./images/people/comment2.png",
+    },
+
+    {
+      id: 3,
+      name: "John Mans",
+      location: "USA, Nevada",
+      title: "Trusted Advisors",
+      body: "The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!",
+      img: "./images/people/comment3.png",
+    },
+  ];
 
   // Swiper carousel
   const pagination = {
@@ -18,24 +41,6 @@ const CommentCard = () => {
       return '<span class="' + className + '">' + (index + 1) + "</span>";
     },
   };
-
-  // request api for comment
-  useEffect(() => {
-    // Fetch user data from external API
-    fetch("https://6716fe923fcb11b265d41e7c.mockapi.io/Comment")
-      .then((response) => response.json())
-      .then((jsonData) => {
-        setData(jsonData);
-        setLoading(false);
-      })
-      .catch((err) => {
-        setError(err);
-        setLoading(false);
-      });
-  }, []);
-
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error.message}</p>;
 
   // repeated icons
   const icons = new Array(5).fill(null);
@@ -71,8 +76,7 @@ const CommentCard = () => {
           },
         }}
       >
-        {data.map((user, index) => {
-          if (index >= 6) return null;
+        {data.map((user) => {
           return (
             <SwiperSlide
               className="laptop:p-8 mobile:p-4 border-2  border-stroke rounded-xl"
