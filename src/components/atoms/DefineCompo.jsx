@@ -36,7 +36,7 @@ export default function DefineCompo(props) {
         <div className={classNames(`${props.value ? " " : "hidden"}`)}>
           <Button
             variant="second"
-            action="View All Properties"
+            action={props.action}
             paddingname="px-6 py-3"
           />
         </div>
