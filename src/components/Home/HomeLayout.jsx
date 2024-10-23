@@ -3,6 +3,7 @@ import Header from "./atom/Header";
 import Featureprop from "./atom/Featureprop";
 import Feature from "./atom/Feature";
 import Comments from "./atom/Comments";
+import Questions from "./atom/Questions"
 export default function HomeLayout() {
   return (
     <main>
@@ -11,6 +12,7 @@ export default function HomeLayout() {
         <Featureprop />
         <Feature />
         <Comments />
+        <Questions />
       </section>
     </main>
   );
