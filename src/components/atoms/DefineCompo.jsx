@@ -6,17 +6,21 @@ import { LuSparkle } from "react-icons/lu";
 export default function DefineCompo(props) {
   return (
     <div className="">
-      <div className="flex items-center mb-3">
-        <LuSparkle className="tablet:text-3xl mobile:text-2xl text-ruby" />
-        <LuSparkle className="tablet:text-2xl mobile:text-xl text-[#333]"/>
-        <LuSparkle className="tablet:text-xl mobile:text-lg text-[#333]"/>
+      <div className={classNames({ hidden: !props.stars })}>
+        <div className=" flex items-center mb-3 ">
+          <LuSparkle className="tablet:text-3xl mobile:text-2xl text-ruby" />
+          <LuSparkle className="tablet:text-2xl mobile:text-xl text-[#333]" />
+          <LuSparkle className="tablet:text-xl mobile:text-lg text-[#333]" />
+        </div>
       </div>
-      <div className="flex justify-between flex-wrap items-center">
+      <div className="flex labtop:justify-between tablet:justify-between mobile:justify-center laptop:flex-wrap tablet:flex-nowrap mobile:flex-wrap items-center">
         <div>
           <h2
             className={classNames(
               ` font-semibold text-textcook ${
-                props.value ? "tablet:text-4xl mobile:text-2xl mb-4" : " mb-1"
+                props.value
+                  ? "laptop:text-4xl tablet:text-3xl mobile:text-xl mb-4"
+                  : "mb-1"
               }`
             )}
           >
@@ -25,8 +29,10 @@ export default function DefineCompo(props) {
 
           <p
             className={classNames(
-              `text-tasting tablet:text-base mobile:text-sm mb-1 ${
-                props.value ? "max-w-4xl" : "max-w-4xl"
+              `text-tasting labtop:text-base tablet:text-sm mobile:text-sm mb-4 ${
+                props.value
+                  ? "laptop:max-w-4xl tablet:max-w-lg mobile:max-w-auto"
+                  : "max-w-4xl"
               }`
             )}
           >
@@ -35,9 +41,9 @@ export default function DefineCompo(props) {
         </div>
         <div className={classNames(`${props.value ? " " : "hidden"}`)}>
           <Button
-            variant="second"
+            variant={props.variants}
             action={props.action}
-            paddingname="px-6 py-3"
+            paddingname="laptop:px-8 laptop:py-4 tablet:px-5 tablet:py-3 mobile:px-8 mobile:py-4 mr-0"
           />
         </div>
       </div>
