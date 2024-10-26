@@ -1,9 +1,10 @@
 import React from "react";
 import DefineCompo from "../../atoms/DefineCompo";
 import QuestionCard from "./QuestionCard";
+import {Element} from "react-scroll"
 export default function Questions() {
   return (
-    <main>
+    <Element name="questions">
       <section className="container mx-auto pt-20">
         <DefineCompo
           title="Frequently Asked Questions"
@@ -17,6 +18,6 @@ export default function Questions() {
       <section>
         <QuestionCard />
       </section>
-    </main>
+    </Element>
   );
 }

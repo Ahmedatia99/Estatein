@@ -1,8 +1,11 @@
 import React from "react";
-
+import {Element} from "react-scroll";
 export default function Banner() {
   return (
-    <main className="bg-banner-img bg-cover bg-junior text-white bg-opacity-90">
+    <Element
+      name="hero"
+      className="bg-banner-img bg-cover bg-junior text-white bg-opacity-90"
+    >
       <section className="container mx-auto flex justify-center items-center p-3 mobile:p-0 mobile:py-3 ">
         <h2 className="text-xl md:text-base sm:text-sm mobile:text-xs font-medium">
           ✨Discover Your Dream Property with Estatein
@@ -14,6 +17,6 @@ export default function Banner() {
           Learn more
         </a>
       </section>
-    </main>
+    </Element>
   );
 }

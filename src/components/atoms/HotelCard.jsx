@@ -6,7 +6,7 @@ import { HiMiniBuildingOffice } from "react-icons/hi2";
 import { Button } from "./Button/Button.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "../../assets/style/main.css";
-
+import {Element} from "react-scroll"
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
@@ -19,7 +19,7 @@ export default function HotelCard() {
     },
   };
   return (
-    <section className="container mx-auto">
+    <Element name="prop" className="container mx-auto">
       <Swiper
         slidesPerView={3}
         spaceBetween={10}
@@ -93,6 +93,6 @@ export default function HotelCard() {
           );
         })}
       </Swiper>
-    </section>
+    </Element>
   );
 }

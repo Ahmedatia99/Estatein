@@ -5,18 +5,18 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
-
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 
 export default function Footer() {
   return (
     <footer className="w-full ">
       <div className="px-5">
-        <div className="mx-auto container grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 gap-y-3 md:gap-3 mobile:gap-8 py-10 ">
+        <div className="mx-auto container grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 gap-y-3 md:gap-3 mobile:gap-8 py-8 ">
           <div className=" items-center">
-            <Link to="/" className="flex justify-center lg:justify-start">
+            <RouterLink to="/" className="flex justify-center lg:justify-start">
               <img src="./images/Logo.svg" />
-            </Link>
+            </RouterLink>
             {/*  */}
             <form className="flex items-center justify-center max-w-lg mx-auto">
               <div className="relative w-full">
@@ -39,22 +39,57 @@ export default function Footer() {
           </div>
           {/*  */}
           <div className="lg:mx-auto text-left ">
-            <h4 className="text-lg text-tasting font-medium mb-5">Home</h4>
-            <ul className="text-sm  transition-all duration-500">
-              <li className="mb-2">
-                <Link className=" hover:text-purple font-medium p-2 ">
+            <h4 className="text-lg text-tasting font-medium mb-3">Home</h4>
+            <ul className="text-sm flex flex-col gap-3">
+              <li className="mb-2 cursor-pointer">
+                <ScrollLink
+                  smooth={true}
+                  duration={500}
+                  to="hero"
+                  className="hover:text-purple font-medium p-2 "
+                >
                   Hero Section
-                </Link>
+                </ScrollLink>
               </li>
-              <li className="mb-2">
-                <Link className="  hover:text-purple font-medium p-2 ">
-                  About
-                </Link>
+              <li className="mb-2 cursor-pointer">
+                <ScrollLink
+                  name="feature"
+                  smooth={true}
+                  duration={500}
+                  className="hover:text-purple font-medium p-2 cursor-pointer "
+                >
+                  Features
+                </ScrollLink>
               </li>
               <li>
-                <Link className="  hover:text-purple font-medium p-2 ">
-                  Pricing
-                </Link>
+                <ScrollLink
+                  name="feature"
+                  smooth={true}
+                  duration={500}
+                  className="hover:text-purple font-medium p-2 cursor-pointer "
+                >
+                  Properties
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  name="prop"
+                  smooth={true}
+                  duration={500}
+                  className="hover:text-purple font-medium p-2 cursor-pointer "
+                >
+                  Testimonials
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  name="questions"
+                  smooth={true}
+                  duration={500}
+                  className="hover:text-purple font-medium p-2 cursor-pointer "
+                >
+                  FAQ’s
+                </ScrollLink>
               </li>
             </ul>
           </div>
@@ -62,20 +97,20 @@ export default function Footer() {
           <div className="lg:mx-auto text-left ">
             <h4 className="text-lg text-tasting font-medium mb-5">Products</h4>
             <ul className="text-sm  transition-all duration-500">
-              <li className="mb-2">
-                <Link className=" hover:text-purple font-medium p-2">
+              <li className="mb-2 cursor-pointer">
+                <ScrollLink className=" hover:text-purple font-medium p-2">
                   Figma UI System
-                </Link>
+                </ScrollLink>
               </li>
-              <li className="mb-2">
-                <Link className="  hover:text-purple font-medium p-2">
+              <li className="mb-2 cursor-pointer">
+                <ScrollLink className="  hover:text-purple font-medium p-2">
                   Icons Assets
-                </Link>
+                </ScrollLink>
               </li>
               <li>
-                <Link className="  hover:text-purple font-medium p-2">
+                <ScrollLink className="  hover:text-purple font-medium p-2">
                   Responsive Blocks
-                </Link>
+                </ScrollLink>
               </li>
             </ul>
           </div>
@@ -83,20 +118,20 @@ export default function Footer() {
           <div className="lg:mx-auto text-left ">
             <h4 className="text-lg text-tasting font-medium mb-5">Support</h4>
             <ul className="text-sm  transition-all duration-500">
-              <li className="mb-2">
-                <Link className=" hover:text-purple font-medium p-2">
+              <li className="mb-2 cursor-pointer">
+                <ScrollLink className=" hover:text-purple font-medium p-2">
                   Customer Support
-                </Link>
+                </ScrollLink>
               </li>
-              <li className="mb-2">
-                <Link className="  hover:text-purple font-medium p-2">
+              <li className="mb-2 cursor-pointer">
+                <ScrollLink className="  hover:text-purple font-medium p-2">
                   Terms & Conditions
-                </Link>
+                </ScrollLink>
               </li>
               <li>
-                <Link className="  hover:text-purple font-medium p-2">
+                <ScrollLink className="  hover:text-purple font-medium p-2">
                   Privacy Policy
-                </Link>
+                </ScrollLink>
               </li>
             </ul>
           </div>
@@ -104,20 +139,20 @@ export default function Footer() {
           <div className="lg:mx-auto text-left ">
             <h4 className="text-lg text-tasting font-medium mb-5">Support</h4>
             <ul className="text-sm  transition-all duration-500">
-              <li className="mb-2">
-                <Link className=" hover:text-purple font-medium p-2">
+              <li className="mb-2 cursor-pointer">
+                <ScrollLink className=" hover:text-purple font-medium p-2">
                   Customer Support
-                </Link>
+                </ScrollLink>
               </li>
-              <li className="mb-2">
-                <Link className="  hover:text-purple font-medium p-2 ">
+              <li className="mb-2 cursor-pointer">
+                <ScrollLink className="  hover:text-purple font-medium p-2 ">
                   Terms & Conditions
-                </Link>
+                </ScrollLink>
               </li>
               <li>
-                <Link className="  hover:text-purple font-medium p-2">
+                <ScrollLink className="  hover:text-purple font-medium p-2">
                   Privacy Policy
-                </Link>
+                </ScrollLink>
               </li>
             </ul>
           </div>
@@ -125,20 +160,20 @@ export default function Footer() {
           <div className="lg:mx-auto text-left ">
             <h4 className="text-lg text-tasting font-medium mb-5">Support</h4>
             <ul className="text-sm  transition-all duration-500">
-              <li className="mb-2">
-                <Link className=" hover:text-purple font-medium p-2">
+              <li className="mb-2 cursor-pointer">
+                <ScrollLink className=" hover:text-purple font-medium p-2">
                   Customer Support
-                </Link>
+                </ScrollLink>
               </li>
-              <li className="mb-2">
-                <Link className="  hover:text-purple font-medium p-2">
+              <li className="mb-2 cursor-pointer">
+                <ScrollLink className="  hover:text-purple font-medium p-2">
                   Terms & Conditions
-                </Link>
+                </ScrollLink>
               </li>
               <li>
-                <Link className="  hover:text-purple font-medium p-2">
+                <ScrollLink className="  hover:text-purple font-medium p-2">
                   Privacy Policy
-                </Link>
+                </ScrollLink>
               </li>
             </ul>
           </div>
@@ -148,27 +183,27 @@ export default function Footer() {
         <div className="flex items-center justify-center  flex-col lg:justify-between lg:flex-row">
           <span className="text-sm  ">
             © 2024
-            <Link
+            <RouterLink
               to="https://www.linkedin.com/in/ahmed-atia-b60458206/"
               className="p-2 text-purple font-semibold"
             >
               Ahmed Atia
-            </Link>{" "}
+            </RouterLink>{" "}
             All Rights Reserved.
           </span>
           <div className="flex mt-4 space-x-4 sm:justify-center lg:mt-0 ">
-            <Link className="p-2">
+            <ScrollLink className="p-2">
               <FaInstagram />
-            </Link>
-            <Link className="p-2">
+            </ScrollLink>
+            <ScrollLink className="p-2">
               <FaLinkedin />
-            </Link>
-            <Link className="p-2 ">
+            </ScrollLink>
+            <ScrollLink className="p-2 ">
               <FaFacebook />
-            </Link>
-            <Link className=" p-2">
+            </ScrollLink>
+            <ScrollLink className=" p-2">
               <FaDiscord />
-            </Link>
+            </ScrollLink>
           </div>
         </div>
       </div>
