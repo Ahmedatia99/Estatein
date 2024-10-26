@@ -24,7 +24,7 @@ export default function Navbar() {
               <img
                 src={"/images/Logo.svg"}
                 alt="studysphere"
-                className="w-28 h-20 mobile:w-16 mobile:h-16"
+                className="w-28 h-20 laptop:w-28 tablet:w-20 laptop:h-28 tablet:h-20 mobile:w-16 mobile:h-16"
               />
             </Link>
             <div className="flex justify-center items-center">
@@ -57,7 +57,7 @@ export default function Navbar() {
                   onClick={() => handleClick("home")}
                   className={classNames(
                     activeLink === "home"
-                      ? "drop-shadow-lg bg-senior border-2 border-stroke py-4 px-6 mobile:p-0 flex items-center justify-center"
+                      ? "drop-shadow-lg bg-senior border-2 border-stroke py-4 px-6  laptop:p-3 tablet:p-2 mobile:p-0 flex items-center justify-center"
                       : "py-4 px-6  mobile:p-0"
                   )}
                   to={"/"}
@@ -70,7 +70,7 @@ export default function Navbar() {
                   onClick={() => handleClick("courses")}
                   className={classNames(
                     activeLink === "courses"
-                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6 mobile:p-0"
+                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6  laptop:p-3 tablet:p-2 mobile:p-0"
                       : "lg:p-3 xl:p-5  mobile:p-0"
                   )}
                   to={"/courses"}
@@ -83,7 +83,7 @@ export default function Navbar() {
                   onClick={() => handleClick("about")}
                   className={classNames(
                     activeLink === "about"
-                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6 mobile:p-0 flex items-center justify-center"
+                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6 laptop:p-3 tablet:p-2 mobile:p-0 flex items-center justify-center"
                       : "lg:p-3 xl:p-5  mobile:p-0"
                   )}
                   to={"/about"}
@@ -97,7 +97,7 @@ export default function Navbar() {
                   onClick={() => handleClick("pricing")}
                   className={classNames(
                     activeLink === "pricing"
-                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6  mobile:p-0 flex items-center justify-center"
+                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6   laptop:p-3 tablet:p-2 mobile:p-0 flex items-center justify-center"
                       : "lg:p-3 xl:p-5  mobile:p-0"
                   )}
                 >
@@ -110,7 +110,7 @@ export default function Navbar() {
                   onClick={() => handleClick("contact")}
                   className={classNames(
                     activeLink === "contact"
-                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6  mobile:p-0 flex items-center justify-center"
+                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6   laptop:p-3 tablet:p-2 mobile:p-0 flex items-center justify-center"
                       : "lg:p-3 xl:p-5  mobile:p-0"
                   )}
                 >
