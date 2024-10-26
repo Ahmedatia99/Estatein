@@ -1,7 +1,7 @@
 import React from "react";
 import DefineCompo from "../../atoms/DefineCompo";
 import QuestionCard from "./QuestionCard";
-import {Element} from "react-scroll"
+import { Element } from "react-scroll";
 export default function Questions() {
   return (
     <Element name="questions">
@@ -12,7 +12,7 @@ export default function Questions() {
           value="true"
           action="View All FAQ’s"
           stars={true}
-          variants="second"
+          variants="secondry"
         />
       </section>
       <section>

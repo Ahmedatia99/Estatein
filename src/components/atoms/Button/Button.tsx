@@ -1,9 +1,8 @@
-import React from "react";
 import { HTMLAttributes } from "react";
 import classNames from "classnames";
 
 interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "second ";
+  variant?: "primary" | "secondry ";
   action: string;
   displays?: "true" | "false";
   paddingname?: string;
@@ -16,7 +15,7 @@ export const Button = ({
 }: ButtonProps) => {
   const variants = {
     primary: " bg-purple text-white",
-    second: "bg-senior  text-white border-stroke border-2",
+    secondry: "bg-senior text-white border-stroke border-2",
     greedy: "bg-litewhite text-textcook",
     common: "bg-junior text-white",
   }[variant];

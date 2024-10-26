@@ -15,7 +15,7 @@ export default function Header() {
         <div className="tablet:flex tablet:flex-row tablet:my-12 mobile:my-5 mobile:flex mobile:flex-col w-full">
           <Button
             action="Learn More"
-            variant="second"
+            variant="secondry"
             paddingname="px-5 py-3 tablet:mr-4 tablet:my-0 mobile:my-5  "
           />
           <Button

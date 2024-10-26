@@ -11,7 +11,7 @@ export default function Comments() {
           description="Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs."
           value={true}
           stars={true}
-          variants="second"
+          variants="secondry"
           action={"View All Testimonials"}
         />
       </section>
