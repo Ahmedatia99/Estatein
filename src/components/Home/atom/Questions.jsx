@@ -10,6 +10,8 @@ export default function Questions() {
           description="Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way."
           value="true"
           action="View All FAQ’s"
+          stars={true}
+          variants="second"
         />
       </section>
       <section>

@@ -18,7 +18,7 @@ export const Button = ({
     primary: " bg-purple text-white",
     second: "bg-senior  text-white border-stroke border-2",
     greedy: "bg-litewhite text-textcook",
-    common:"bg-junior text-white"
+    common: "bg-junior text-white",
   }[variant];
 
   return (

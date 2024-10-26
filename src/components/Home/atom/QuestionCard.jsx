@@ -38,7 +38,7 @@ export default function QuestionCard() {
   };
 
   return (
-    <div className="pt-10">
+    <div className="pt-10 container mx-auto">
       <Swiper
         slidesPerView={3}
         spaceBetween={10}
