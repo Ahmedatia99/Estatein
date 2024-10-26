@@ -8,6 +8,7 @@ import Contact from "./pages/Contact.jsx";
 import Service from "./pages/Service.jsx";
 import Navbar from "./components/atoms/Navbar.jsx"
 import Banner from "./components/atoms/Banner.jsx";
+import Footer from "./components/atoms/Footer.jsx"
 function App() {
   return (
     <main>
@@ -22,6 +23,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
+      <Footer />
     </main>
   );
 }
