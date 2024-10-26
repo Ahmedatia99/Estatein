@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "../../atoms/Button/Button.tsx";
-// import { GoArrowUpRight } from "react-icons/go";
 export default function Header() {
   return (
     <div className="container mx-auto grid tablet:grid-cols-2 bg-senior gap-14 mobile:grid-cols-1 ">
@@ -56,8 +55,12 @@ export default function Header() {
       </div>
       <div className="tablet:order-2 mobile:order-1 tablet:mt-0 mobile:mt-10">
         <img
-          src="./images/header.svg"
-          className="w-full tablet:rounded-none mobile:rounded-2xl"
+          src="./images/header.png"
+          className="w-full tablet:rounded-none mobile:rounded-2xl mobile:hidden tablet:flex laptop:flex "
+        />
+        <img
+          src="./images/header mob.svg"
+          className="w-full tablet:rounded-none mobile:rounded-2xl mobile:flex tablet:hidden laptop:hidden "
         />
       </div>
     </div>
