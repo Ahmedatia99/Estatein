@@ -20,7 +20,7 @@ export default function DefineCompo(props) {
               ` font-semibold text-textcook ${
                 props.value
                   ? "laptop:text-4xl tablet:text-3xl mobile:text-xl mb-4"
-                  : "mb-1"
+                  : "laptop:text-4xl tablet:text-3xl mobile:text-xl mb-1"
               }`
             )}
           >
@@ -32,7 +32,7 @@ export default function DefineCompo(props) {
               `text-tasting labtop:text-base tablet:text-sm mobile:text-sm mb-4 ${
                 props.value
                   ? "laptop:max-w-4xl tablet:max-w-lg mobile:max-w-auto"
-                  : "max-w-4xl"
+                  : "max-w-2xl"
               }`
             )}
           >

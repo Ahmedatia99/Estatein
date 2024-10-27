@@ -24,7 +24,7 @@ export default function Navbar() {
               <img
                 src={"/images/Logo.svg"}
                 alt="studysphere"
-                className="w-28 h-20 laptop:w-28 tablet:w-20 laptop:h-28 tablet:h-20 mobile:w-16 mobile:h-16"
+                className="w-16 h-10 laptop:w-28 tablet:w-20 laptop:h-28 tablet:h-20 mobile:w-16 mobile:h-16"
               />
             </Link>
             <div className="flex justify-center items-center">
