@@ -15,7 +15,7 @@ export default {
         guide: "#4D4D4D",
       },
       backgroundImage: {
-        "banner-img": "url('./public/images/banner Design.svg')",
+        "banner-img": "url('./src/assets/images/banner Design.svg')",
       },
       screens: {
         mobile: "320px",

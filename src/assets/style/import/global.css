@@ -37,7 +37,7 @@
   opacity: 1 !important;
 }
 .cta{
-   background-image: url("./images/abstract designs/left.png"), url("./images/abstract designs/right.png");
+   background-image: url("../../images/abstract designs/left.png"), url("../../images/abstract designs/right.png");
     background-position:left,right;
     background-repeat: no-repeat;
    
