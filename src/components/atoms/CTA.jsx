@@ -4,7 +4,7 @@ import "../../assets/style/main.css";
 
 export default function CTA() {
   return (
-    <main className=" cta border-t border-b border-stroke mt-20 ">
+    <main className=" cta border-t border-b border-stroke mt-20 px-5">
       <section className="laptop:py-20 tablet:py-12 mobile:py-10 container mx-auto  ">
         <DefineCompo
           title="Start Your Real Estate Journey Today"

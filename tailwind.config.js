@@ -9,13 +9,13 @@ export default {
         stroke: "#262626",
         purple: "#703BF7",
         purple_secon: "#A685FA",
-        drop_shad:"#191919",
+        drop_shad: "#191919",
         tasting: "#999999",
         ruby: "#666666",
         guide: "#4D4D4D",
       },
       backgroundImage: {
-        "banner-img": "url('./images/banner Design.svg')",
+        "banner-img": "url('./public/images/banner Design.svg')",
       },
       screens: {
         mobile: "320px",

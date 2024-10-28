@@ -6,9 +6,10 @@ import About from "./pages/About.jsx";
 import Properties from "./pages/Properties.jsx";
 import Contact from "./pages/Contact.jsx";
 import Service from "./pages/Service.jsx";
-import Navbar from "./components/atoms/Navbar.jsx"
+import Navbar from "./components/atoms/Navbar.jsx";
 import Banner from "./components/atoms/Banner.jsx";
-import Footer from "./components/atoms/Footer.jsx"
+import Footer from "./components/atoms/Footer.jsx";
+import CTA from "./components/atoms/CTA.jsx";
 function App() {
   return (
     <main>
@@ -23,6 +24,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
+      <CTA />
       <Footer />
     </main>
   );
