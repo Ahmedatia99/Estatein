@@ -8,6 +8,8 @@ export default {
         senior: "#141414",
         stroke: "#262626",
         purple: "#703BF7",
+        purple_secon: "#A685FA",
+        drop_shad:"#191919",
         tasting: "#999999",
         ruby: "#666666",
         guide: "#4D4D4D",
