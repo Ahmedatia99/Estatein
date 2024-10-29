@@ -43,7 +43,7 @@ const OurTeam = () => {
     },
   ];
   return (
-    <Element>
+    <Element name="team">
       <section className="container mx-auto py-20">
         <DefineCompo
           title="Meet the Estatein Team"

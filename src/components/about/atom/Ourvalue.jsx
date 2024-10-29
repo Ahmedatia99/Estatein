@@ -5,7 +5,7 @@ import DefineCompo from "../../atoms/DefineCompo";
 
 export default function Ourvalue() {
   return (
-    <Element>
+    <Element name="value">
       <section className="container mx-auto pt-20 flex mobile:flex-col laptop:flex-row justify-center items-center mobile:gap-0 laptop:gap-16">
         <DefineCompo
           title="Our Values"

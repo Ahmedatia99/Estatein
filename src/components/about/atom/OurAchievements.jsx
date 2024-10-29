@@ -23,7 +23,7 @@ export default function OurAchievements() {
     },
   ];
   return (
-    <Element>
+    <Element name="achieve">
       <section className="container mx-auto flex flex-col justify-center  pt-20">
         <DefineCompo
           title="Our Achievements"

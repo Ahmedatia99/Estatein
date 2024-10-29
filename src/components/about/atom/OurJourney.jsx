@@ -3,7 +3,7 @@ import { Element } from "react-scroll";
 import DefineCompo from "../../atoms/DefineCompo";
 export default function OurJourney() {
   return (
-    <Element className="container mx-auto">
+    <Element name="journy" className="container mx-auto">
       <section className="flex  mobile:flex-col tablet:flex-row justify-between  items-center mobile:pt-10 laptop:pt-20">
         <div className="flex mobile:order-2 tablet:order-1 flex-col justify-start laptop:items-start mobile:items-center">
           <DefineCompo

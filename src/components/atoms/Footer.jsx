@@ -51,7 +51,7 @@ export default function Footer() {
                 <ScrollLink
                   smooth={true}
                   duration={500}
-                  to="hero"
+                  to={"hero"}
                   className="hover:text-purple font-medium p-2 tablet:text-sm mobile:text-xs laptop:text-base "
                 >
                   Hero section
@@ -102,22 +102,47 @@ export default function Footer() {
           {/* <!--End Col--> */}
           <div className="lg:mx-auto text-left ">
             <h4 className="laptop:text-lg tablet:text-base mobile:text-base text-tasting font-medium tablet:mb-5 mobile:mb-0 p-2">
-              Products
+              About Us
             </h4>
             <ul className="text-sm  transition-all duration-500">
               <li className="mb-2 cursor-pointer">
-                <ScrollLink className=" hover:text-purple font-medium p-2 tablet:text-sm mobile:text-xs laptop:text-base">
-                  Figma UI System
+                <ScrollLink
+                  to="journy"
+                  smooth={true}
+                  duration={500}
+                  className=" hover:text-purple font-medium p-2 tablet:text-sm mobile:text-xs laptop:text-base"
+                >
+                  Our Story
                 </ScrollLink>
               </li>
               <li className="mb-2 cursor-pointer">
-                <ScrollLink className="  hover:text-purple font-medium p-2 tablet:text-sm mobile:text-xs laptop:text-base">
-                  Icons Assets
+                <ScrollLink
+                  to="value"
+                  smooth={true}
+                  duration={500}
+                  className="  hover:text-purple font-medium p-2 tablet:text-sm mobile:text-xs laptop:text-base"
+                >
+                  Our Works
                 </ScrollLink>
               </li>
               <li>
-                <ScrollLink className="  hover:text-purple font-medium p-2 tablet:text-sm mobile:text-xs laptop:text-base">
-                  Responsive Blocks
+                <ScrollLink
+                  to="achieve"
+                  smooth={true}
+                  duration={500}
+                  className=" hover:text-purple font-medium p-2 tablet:text-sm mobile:text-xs laptop:text-base cursor-pointer"
+                >
+                  Our Achievement
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  to="team"
+                  smooth={true}
+                  duration={500}
+                  className="hover:text-purple font-medium p-2 tablet:text-sm mobile:text-xs laptop:text-base cursor-pointer"
+                >
+                  Our Team
                 </ScrollLink>
               </li>
             </ul>
