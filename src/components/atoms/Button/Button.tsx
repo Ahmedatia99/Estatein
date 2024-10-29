@@ -7,6 +7,7 @@ interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   action: string;
   displays?: "true" | "false";
   paddingname?: string;
+  path: string;
 }
 
 export const Button = ({
