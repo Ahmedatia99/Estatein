@@ -21,6 +21,9 @@
   .shaow{
     text-shadow: 0px 4px 4px #0000007d;
   }
+  .ban{
+    background-image: url("../../images/bannerDesign.svg")
+  }
   /* swiper in HotelCard component */
 .swiper-pagination {
   position: relative !important;
