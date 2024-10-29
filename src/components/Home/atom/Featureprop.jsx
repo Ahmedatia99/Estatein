@@ -5,11 +5,14 @@ import { HiMiniBuildingOffice2 } from "react-icons/hi2";
 import { IoSunny } from "react-icons/io5";
 import { GoArrowUpRight } from "react-icons/go";
 import { Link } from "react-router-dom";
-import {Element} from "react-scroll";
+import { Element } from "react-scroll";
 
 export default function Featureprop() {
   return (
-    <Element name="feature" className="border-8 border-junior container mx-auto mobile:mt-10">
+    <Element
+      name="feature"
+      className="border-8 border-junior container mx-auto mobile:mt-10"
+    >
       <section className=" border-stroke border-2  p-3 grid tablet:grid-cols-4 tablet:gap-3 mobile:grid-cols-2 mobile:gap-3">
         <div className="tablet:py-8 mobile:py-5 tablet:px-4 mobile:px-3 bg-junior border-2 border-stroke rounded-xl flex flex-col justify-center items-center relative">
           <div className="flex justify-end items-end w-full absolute top-0">

@@ -24,7 +24,7 @@ export default function Navbar() {
               <img
                 src={"/images/Logo.svg"}
                 alt="studysphere"
-                className="w-16 h-10 laptop:w-28 tablet:w-20 laptop:h-28 tablet:h-20 mobile:w-16 mobile:h-16"
+                className="w-16 laptop:w-28 tablet:w-20 h-16 mobile:w-16 :"
               />
             </Link>
             <div className="flex justify-center items-center">
@@ -37,7 +37,7 @@ export default function Navbar() {
               </div>
               <div className="md:hidden tablet:order-2 ">
                 <button
-                  className="p-2 mobile:p-0 rounded outline-none focus:border-gray-400 focus:border"
+                  className="p-2 text-purple_secon rounded outline-none focus:border-purple focus:border"
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? <IoMenu size={20} /> : <FiX size={20} />}
@@ -57,8 +57,8 @@ export default function Navbar() {
                   onClick={() => handleClick("home")}
                   className={classNames(
                     activeLink === "home"
-                      ? "drop-shadow-lg bg-senior border-2 border-stroke py-4 px-6  laptop:p-3 tablet:p-2 mobile:p-0 flex items-center justify-center"
-                      : "py-4 px-6  mobile:p-0"
+                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6 laptop:p-3 tablet:p-2 mobile:px-3 mobile:py-2 flex transition-all items-center justify-center"
+                      : "py-4 px-6 mobile:px-3 mobile:py-2"
                   )}
                   to={"/"}
                 >
@@ -70,8 +70,8 @@ export default function Navbar() {
                   onClick={() => handleClick("courses")}
                   className={classNames(
                     activeLink === "courses"
-                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6  laptop:p-3 tablet:p-2 mobile:p-0"
-                      : "lg:p-3 xl:p-5  mobile:p-0"
+                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6 laptop:p-3 tablet:p-2 mobile:px-3 mobile:py-2 flex transition-all items-center justify-center"
+                      : "lg:p-3 xl:p-5  mobile:px-3 mobile:py-2"
                   )}
                   to={"/courses"}
                 >
@@ -83,8 +83,8 @@ export default function Navbar() {
                   onClick={() => handleClick("about")}
                   className={classNames(
                     activeLink === "about"
-                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6 laptop:p-3 tablet:p-2 mobile:p-0 flex items-center justify-center"
-                      : "lg:p-3 xl:p-5  mobile:p-0"
+                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6 laptop:p-3 tablet:p-2 mobile:px-3 mobile:py-2 flex transition-all items-center justify-center"
+                      : "lg:p-3 xl:p-5  mobile:px-3 mobile:py-2"
                   )}
                   to={"/about"}
                 >
@@ -97,8 +97,8 @@ export default function Navbar() {
                   onClick={() => handleClick("pricing")}
                   className={classNames(
                     activeLink === "pricing"
-                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6   laptop:p-3 tablet:p-2 mobile:p-0 flex items-center justify-center"
-                      : "lg:p-3 xl:p-5  mobile:p-0"
+                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6   laptop:p-3 tablet:p-2 mobile:px-3 mobile:py-2 flex transition-all items-center justify-center"
+                      : "lg:p-3 xl:p-5  mobile:px-3 mobile:py-2"
                   )}
                 >
                   Pricing
@@ -110,8 +110,8 @@ export default function Navbar() {
                   onClick={() => handleClick("contact")}
                   className={classNames(
                     activeLink === "contact"
-                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6   laptop:p-3 tablet:p-2 mobile:p-0 flex items-center justify-center"
-                      : "lg:p-3 xl:p-5  mobile:p-0"
+                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6   laptop:p-3 tablet:p-2 mobile:px-3 mobile:py-2 transition-all flex items-center justify-center"
+                      : "lg:p-3 xl:p-5  mobile:px-3 mobile:py-2"
                   )}
                 >
                   Contact
