@@ -13,6 +13,7 @@ export default function CTA() {
           stars={false}
           value={true}
           variants="primary"
+          path="/prototype"
         />
       </section>
     </main>

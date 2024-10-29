@@ -1,9 +1,13 @@
 import React from "react";
 import { Button } from "../../atoms/Button/Button.tsx";
-import {Element} from "react-scroll"
+import { Element } from "react-scroll";
+
 export default function Header() {
   return (
-    <Element name="hero" className="container mx-auto grid tablet:grid-cols-2 bg-senior gap-14 mobile:grid-cols-1 ">
+    <Element
+      name="hero"
+      className="container mx-auto grid tablet:grid-cols-2 bg-senior gap-14 mobile:grid-cols-1 "
+    >
       <div className="taplet:py-20 mobile:py-0 tablet:order-1 mobile:order-2">
         <h2 className="lg:text-5xl mobile:text-3xl tablet:py-5 mobile:py-3 font-semibold text-white max-w-xl leading-normal ">
           Discover Your Dream Property with Estatein
@@ -16,12 +20,14 @@ export default function Header() {
           <Button
             action="Learn More"
             variant="secondry"
-            paddingname="px-5 py-3 tablet:mr-4 tablet:my-0 mobile:my-5  "
+            paddingname="px-5 py-3 tablet:mr-4 tablet:my-0 mobile:my-5"
+            path="/service"
           />
           <Button
             action="Browse Properties"
             varient="primary"
-            paddingname="px-5 py-3  "
+            paddingname="px-5 py-3 "
+            path="/prototype"
           />
         </div>
         <div className="flex tablet:flex-row mobile:flex-col mobile:mt-5 labtop:mt-20">

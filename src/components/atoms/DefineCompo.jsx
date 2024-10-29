@@ -44,6 +44,7 @@ export default function DefineCompo(props) {
             variant={props.variants}
             action={props.action}
             paddingname="laptop:px-8 laptop:py-4 tablet:px-5 tablet:py-3 mobile:px-8 mobile:py-4 mr-0"
+            path={props.path}
           />
         </div>
       </div>

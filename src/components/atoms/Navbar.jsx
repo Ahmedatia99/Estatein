@@ -33,6 +33,7 @@ export default function Navbar() {
                   variant="primary"
                   action="Contact US"
                   paddingname="text-white mobile:hidden"
+                  path="/contact"
                 />
               </div>
               <div className="md:hidden tablet:order-2 ">
@@ -67,19 +68,6 @@ export default function Navbar() {
               </li>
               <li className="md:ml-3 mobile:ml-1 xl:ml-5">
                 <Link
-                  onClick={() => handleClick("courses")}
-                  className={classNames(
-                    activeLink === "courses"
-                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6 laptop:p-3 tablet:p-2 mobile:px-3 mobile:py-2 flex transition-all items-center justify-center"
-                      : "lg:p-3 xl:p-5  mobile:px-3 mobile:py-2"
-                  )}
-                  to={"/courses"}
-                >
-                  Courses
-                </Link>
-              </li>
-              <li className="md:ml-3 mobile:ml-1 xl:ml-5">
-                <Link
                   onClick={() => handleClick("about")}
                   className={classNames(
                     activeLink === "about"
@@ -93,28 +81,29 @@ export default function Navbar() {
               </li>
               <li className="md:ml-3 mobile:ml-1 xl:ml-5">
                 <Link
-                  to={"/pricing"}
-                  onClick={() => handleClick("pricing")}
+                  onClick={() => handleClick("prototype")}
                   className={classNames(
-                    activeLink === "pricing"
+                    activeLink === "prototype"
+                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6 laptop:p-3 tablet:p-2 mobile:px-3 mobile:py-2 flex transition-all items-center justify-center"
+                      : "lg:p-3 xl:p-5  mobile:px-3 mobile:py-2"
+                  )}
+                  to={"/prototype"}
+                >
+                  Properties
+                </Link>
+              </li>
+
+              <li className="md:ml-3 mobile:ml-1 xl:ml-5">
+                <Link
+                  to={"/service"}
+                  onClick={() => handleClick("service")}
+                  className={classNames(
+                    activeLink === "service"
                       ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6   laptop:p-3 tablet:p-2 mobile:px-3 mobile:py-2 flex transition-all items-center justify-center"
                       : "lg:p-3 xl:p-5  mobile:px-3 mobile:py-2"
                   )}
                 >
-                  Pricing
-                </Link>
-              </li>
-              <li className="md:ml-3 mobile:ml-1 xl:ml-5">
-                <Link
-                  to={"/contact"}
-                  onClick={() => handleClick("contact")}
-                  className={classNames(
-                    activeLink === "contact"
-                      ? "drop-shadow-lg bg-senior  border-2 border-stroke py-4 px-6   laptop:p-3 tablet:p-2 mobile:px-3 mobile:py-2 transition-all flex items-center justify-center"
-                      : "lg:p-3 xl:p-5  mobile:px-3 mobile:py-2"
-                  )}
-                >
-                  Contact
+                  Service
                 </Link>
               </li>
             </ul>
@@ -126,6 +115,7 @@ export default function Navbar() {
             variant="secondry"
             action="ContactUs"
             paddingname="laptop:px-5 laptop:py-3 md:px-5 md:py-3 sm:p-2 border-stroke border-2"
+            path="contact"
           />
         </div>
       </section>

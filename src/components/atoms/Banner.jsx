@@ -1,5 +1,6 @@
 import React from "react";
 import "../../assets/style/main.css";
+import { Link } from "react-router-dom";
 export default function Banner() {
   return (
     <div className="ban bg-cover bg-junior text-white bg-opacity-90">
@@ -7,12 +8,12 @@ export default function Banner() {
         <h2 className="text-xl md:text-base sm:text-sm mobile:text-xs font-medium">
           ✨Discover Your Dream Property with Estatein
         </h2>
-        <a
-          href=""
+        <Link
+          to="/prototype"
           className="p-0 pl-2 sm:pl-2 mobile:pl-2 underline mobile:text-xs"
         >
           Learn more
-        </a>
+        </Link>
       </section>
     </div>
   );

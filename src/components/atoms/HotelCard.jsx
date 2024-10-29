@@ -87,6 +87,7 @@ export default function HotelCard() {
                   action="View Property Details"
                   paddingname="laptop:px-10 laptop:py-4 tablet:px-5 tablet:py-2 mobile:px-4 mobile:py-2 mt-3 tablet:mr-0"
                   variant="primary"
+                  path="/protoype" //just test && will replace
                 />
               </div>
             </SwiperSlide>

@@ -9,10 +9,8 @@ export default function Comments() {
         <DefineCompo
           title="What Our Clients Say"
           description="Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs."
-          value={true}
+          value={false}
           stars={true}
-          variants="secondry"
-          action={"View All Testimonials"}
         />
       </section>
       <section className="pt-8">

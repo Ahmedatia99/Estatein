@@ -1,5 +1,6 @@
 import { HTMLAttributes } from "react";
 import classNames from "classnames";
+import { Link } from "react-router-dom";
 
 interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondry ";
@@ -10,11 +11,13 @@ interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
 
 export const Button = ({
   action,
+  path,
   variant = "primary",
   paddingname,
 }: ButtonProps) => {
   const variants = {
-    primary: " bg-purple text-white",
+    primary:
+      "  before:ease relative overflow-hidden bg-purple shadow-2xl transition-all before:absolute before:right-0 before:top-0 before:h-16 before:w-10 before:translate-x-20 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-purple-secon-500 hover:before:-translate-x-56",
     secondry: "bg-senior text-white border-stroke border-2",
     greedy: "bg-litewhite text-textcook",
     common: "bg-junior text-white",
@@ -23,12 +26,12 @@ export const Button = ({
   return (
     <button
       className={classNames(
-        `flex items-center justify-center rounded-lg transition-all text-sm mr-3`,
-        variants,
-        paddingname
+        `flex items-center justify-center rounded-lg transition-all text-sm mr-3`
       )}
     >
-      {action}
+      <Link className={classNames(``, paddingname, variants)} to={path}>
+        {action}
+      </Link>
     </button>
   );
 };
