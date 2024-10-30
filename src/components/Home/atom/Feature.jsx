@@ -11,7 +11,7 @@ export default function Feature() {
           title="Featudefinred Properties"
           stars={true}
           path="/prototype"
-          variants="secondry"
+          variants="secondary"
           description="Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click View Details for more information."
         />
         <HotelFeature />

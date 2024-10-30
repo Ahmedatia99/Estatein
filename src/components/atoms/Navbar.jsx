@@ -112,7 +112,7 @@ export default function Navbar() {
         {/* login-3 */}
         <div className="flex laptop:flex tablet:flex mobile:hidden labtob:flex">
           <Button
-            variant="secondry"
+            variant="secondary"
             action="ContactUs"
             paddingname="laptop:px-5 laptop:py-3 md:px-5 md:py-3 sm:p-2 border-stroke border-2"
             path="contact"
