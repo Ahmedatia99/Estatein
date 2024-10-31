@@ -4,8 +4,8 @@ import { IoSearch } from "react-icons/io5";
 
 export default function SearchProp() {
   return (
-    <section className="px-5">
-      <form className="flex items-center justify-center laptop:max-w-3xl tablet:max-w-xl mobile:w-full mx-auto">
+    <section className="px-5 ">
+      <form className="flex items-center justify-center laptop:max-w-3xl tablet:max-w-xl mobile:w-full mx-auto p-2 bg-junior rounded-t-xl ">
         <div className="relative w-full">
           <div className="pointer-events"></div>
           <input

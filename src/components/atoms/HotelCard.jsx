@@ -6,7 +6,7 @@ import { HiMiniBuildingOffice } from "react-icons/hi2";
 import { Button } from "./Button/Button.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "../../assets/style/main.css";
-import {Element} from "react-scroll"
+import { Element } from "react-scroll";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
@@ -85,7 +85,7 @@ export default function HotelCard() {
                 </div>
                 <Button
                   action="View Property Details"
-                  paddingname="laptop:px-10 laptop:py-4 tablet:px-5 tablet:py-2 mobile:px-4 mobile:py-2 mt-3 tablet:mr-0"
+                  paddingname="laptop:px-10 laptop:py-4 tablet:px-5 tablet:py-2 mobile:px-4 mobile:py-2 tablet:mr-0"
                   variant="primary"
                   path="/protoype" //just test && will replace
                 />

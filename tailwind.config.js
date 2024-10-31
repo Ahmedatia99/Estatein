@@ -16,6 +16,7 @@ export default {
       },
       backgroundImage: {
         "banner-img": "url('./src/assets/images/banner Design.svg')",
+        
       },
       screens: {
         mobile: "320px",
