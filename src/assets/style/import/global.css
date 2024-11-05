@@ -38,6 +38,10 @@
   padding-top: 3px;
   opacity: 1 !important;
 }
+.h-inital{
+  height: initial !important;
+}
+
 .cta{
    background-image: url("../../images/abstract designs/left.png"), url("../../images/abstract designs/right.png");
     background-position:left,right;

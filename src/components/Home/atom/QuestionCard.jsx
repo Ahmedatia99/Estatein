@@ -71,23 +71,25 @@ export default function QuestionCard() {
         {data.map((user) => {
           return (
             <SwiperSlide
-              className="laptop:p-8 mobile:p-4 border-2  border-stroke rounded-xl"
+              className="laptop:p-8 mobile:p-4 border-2  border-stroke rounded-xl h-inital !flex flex-col justify-between"
               key={user.id}
             >
               <div className="laptop:py-8 tablet:py-5 mobile:py-6">
-                <h2 className="capitalize laptop:text-3xl tablet:text-2xl mobile:text-xl font-semibold">
+                <h2 className="capitalize laptop:text-xl tablet:text-2xl mobile:text-xl font-semibold">
                   {user.qus}
                 </h2>
-                <p className="laptop:text-base mobile:text-sm pt-3">
+                <p className="laptop:text-base mobile:text-sm pt-3 text-tasting">
                   {user.ans}
                 </p>
               </div>
-              <div className="flex items-center">{/*  */}</div>
-              <Button
-                variant="common"
-                action="Read More"
-                paddingname="px-6 py-3 border-2 border-stroke"
-              />
+              <div className="flex justify-end items-end">
+                <Button
+                  variant="common"
+                  action="Read More"
+                  paddingname="px-6 py-3 border-2 border-stroke"
+                  path="/service"
+                />
+              </div>
             </SwiperSlide>
           );
         })}
