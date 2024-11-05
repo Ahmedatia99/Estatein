@@ -8,7 +8,7 @@ export default function Feature() {
         <DefineCompo
           action={"View All Properties"}
           value={true}
-          title="Featudefinred Properties"
+          title="Featured Properties"
           stars={true}
           path="/prototype"
           variants="secondary"

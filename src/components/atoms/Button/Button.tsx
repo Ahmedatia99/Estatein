@@ -19,7 +19,7 @@ export const Button = ({
   const variants = {
     primary:
       "before:ease relative overflow-hidden bg-purple shadow-2xl transition-all before:absolute before:right-0 before:top-0 before:h-16 before:w-10 before:translate-x-20 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-purple-secon-500 hover:before:-translate-x-56",
-    secondary: "bg-senior text-white border-stroke border-2",
+    secondary:"bg-senior text-white border-stroke border-2 tablet:mb-0 mobile:mb-3",
     greedy: "bg-litewhite text-textcook",
     common: "bg-junior text-white",
   }[variant];

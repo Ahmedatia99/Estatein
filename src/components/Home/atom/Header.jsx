@@ -20,7 +20,7 @@ export default function Header() {
           <Button
             action="Learn More"
             variant="secondary"
-            paddingname="px-5 py-3 tablet:mr-4 tablet:my-0 mobile:my-5"
+            paddingname="px-5 py-3 tablet:mr-4 tablet:my-0 mobile:m-0"
             path="/service"
           />
           <Button

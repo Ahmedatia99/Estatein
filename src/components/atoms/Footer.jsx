@@ -156,17 +156,17 @@ export default function Footer() {
             </h4>
             <ul className="text-sm  transition-all duration-500">
               <li className="mb-2 cursor-pointer">
-                <ScrollLink className=" hover:text-purple font-medium p-2 tablet:text-sm mobile:text-xs laptop:text-base">
+                <ScrollLink  to="" className=" hover:text-purple font-medium p-2 tablet:text-sm mobile:text-xs laptop:text-base">
                   Customer Support
                 </ScrollLink>
               </li>
               <li className="mb-2 cursor-pointer">
-                <ScrollLink className="  hover:text-purple font-medium p-2 tablet:text-sm mobile:text-xs laptop:text-base ">
+                <ScrollLink to="" className="hover:text-purple font-medium p-2 tablet:text-sm mobile:text-xs laptop:text-base ">
                   Terms & Conditions
                 </ScrollLink>
               </li>
               <li>
-                <ScrollLink className="  hover:text-purple font-medium p-2 tablet:text-sm mobile:text-xs laptop:text-base">
+                <ScrollLink to="" className="hover:text-purple font-medium p-2 tablet:text-sm mobile:text-xs laptop:text-base">
                   Privacy Policy
                 </ScrollLink>
               </li>
@@ -179,17 +179,17 @@ export default function Footer() {
             </h4>
             <ul className="text-sm  transition-all duration-500">
               <li className="mb-2 cursor-pointer">
-                <ScrollLink className=" hover:text-purple font-medium p-2 tablet:text-sm mobile:text-xs laptop:text-base">
+                <ScrollLink to="" className=" hover:text-purple font-medium p-2 tablet:text-sm mobile:text-xs laptop:text-base">
                   Customer Support
                 </ScrollLink>
               </li>
               <li className="mb-2 cursor-pointer">
-                <ScrollLink className="  hover:text-purple font-medium p-2 tablet:text-sm mobile:text-xs laptop:text-base">
+                <ScrollLink to="" className="  hover:text-purple font-medium p-2 tablet:text-sm mobile:text-xs laptop:text-base">
                   Terms & Conditions
                 </ScrollLink>
               </li>
               <li>
-                <ScrollLink className="  hover:text-purple font-medium p-2 tablet:text-sm mobile:text-xs laptop:text-base">
+                <ScrollLink to="" className="  hover:text-purple font-medium p-2 tablet:text-sm mobile:text-xs laptop:text-base">
                   Privacy Policy
                 </ScrollLink>
               </li>

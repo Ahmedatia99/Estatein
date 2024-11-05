@@ -6,12 +6,12 @@
         "info": "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood",
         "bedroom": 2,
         "bathroom": 3,
-        "price": "550,000"
+        "price": "600,000"
     },
     {
         "id": 2,
-        "name": "Seaside Serenity Villa",
-        "img": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGhvdGVsfGVufDB8fDB8fHww",
+        "name": "Mandarin Oriental",
+        "img": "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
         "info": "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood",
         "bedroom": 2,
         "bathroom": 3,
@@ -19,38 +19,38 @@
     },
     {
         "id": 3,
-        "name": "Seaside Serenity Villa",
-        "img": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGhvdGVsfGVufDB8fDB8fHww",
+        "name": "Four Seasons",
+        "img": "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "info": "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood",
         "bedroom": 2,
         "bathroom": 3,
-        "price": "550,000"
+        "price": "480,000"
     },
     {
         "id": 4,
-        "name": "Seaside Serenity Villa",
-        "img": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGhvdGVsfGVufDB8fDB8fHww",
+        "name": "Rosewood",
+        "img": "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "info": "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood",
         "bedroom": 2,
         "bathroom": 3,
-        "price": "550,000"
+        "price": "400,000"
     },
     {
         "id": 5,
-        "name": "Seaside Serenity Villa",
-        "img": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGhvdGVsfGVufDB8fDB8fHww",
+        "name": "Raffles",
+        "img": "https://images.pexels.com/photos/161758/governor-s-mansion-montgomery-alabama-grand-staircase-161758.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "info": "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood",
         "bedroom": 2,
         "bathroom": 3,
-        "price": "550,000"
+        "price": "380,000"
     },
     {
         "id": 6,
-        "name": "Seaside Serenity Villa",
-        "img": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGhvdGVsfGVufDB8fDB8fHww",
+        "name": "Oetker Collection",
+        "img": "https://images.pexels.com/photos/949406/pexels-photo-949406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "info": "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood",
         "bedroom": 2,
         "bathroom": 3,
-        "price": "550,000"
+        "price": "375,000"
     }
 ]
