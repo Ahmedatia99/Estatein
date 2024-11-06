@@ -1,10 +1,11 @@
 import React from "react";
 import { Button } from "../../atoms/Button/Button.tsx";
 import { IoSearch } from "react-icons/io5";
+import SelectProp from "./SelectProp";
 
 export default function SearchProp() {
   return (
-    <section className="px-5 ">
+    <section className="px-5 w-full my-10 mx-auto container ">
       <form className="flex items-center justify-center laptop:max-w-3xl tablet:max-w-xl mobile:w-full mx-auto p-2 bg-junior rounded-t-xl ">
         <div className="relative w-full">
           <div className="pointer-events"></div>
@@ -29,6 +30,9 @@ export default function SearchProp() {
           </div>
         </div>
       </form>
+      <div>
+        <SelectProp />
+      </div>
     </section>
   );
 }
