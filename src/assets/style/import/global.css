@@ -23,6 +23,9 @@
   .ban{
     background-image: url("../../images/bannerDesign.svg")
   }
+  .serv{
+    background-image: url("../../images/services.svg")
+  }
   /* swiper in HotelCard component */
 .swiper-pagination {
   position: relative !important;
@@ -48,6 +51,15 @@
     background-repeat: no-repeat;
    
 
+}
+.gradient-box {
+  background: linear-gradient(#1A1A1A, #1A1A1A) padding-box, linear-gradient(to right,#A685FA, hsla(280, 61%, 50%, 0.585)) border-box;
+  border-radius: 50em;
+  /* border-top: 0px; */
+  /* border-bottom: 0px; */
+  border-width: 0px 2px 0px 2px;
+  border-style: solid;
+  border-color: transparent;
 }
 
   @keyframes show {

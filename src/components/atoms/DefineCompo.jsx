@@ -8,12 +8,12 @@ export default function DefineCompo(props) {
     <div className="">
       <div className={classNames({ hidden: !props.stars })}>
         <div className=" flex items-center mb-3 ">
-          <LuSparkle className="tablet:text-3xl mobile:text-2xl text-ruby" />
-          <LuSparkle className="tablet:text-2xl mobile:text-xl text-[#333]" />
-          <LuSparkle className="tablet:text-xl mobile:text-lg text-[#333]" />
+          <LuSparkle className="tablet:text-3xl mobile:text-2xl text-gray-700" />
+          <LuSparkle className="tablet:text-2xl mobile:text-xl text-gray-800" />
+          <LuSparkle className="tablet:text-xl mobile:text-lg text-gray-900" />
         </div>
       </div>
-      <div className="flex labtop:justify-between tablet:justify-between mobile:justify-center laptop:flex-wrap tablet:flex-nowrap mobile:flex-wrap items-center">
+      <div className=" laptop:ml-5 mobile:ml-3 flex labtop:justify-between tablet:justify-between mobile:justify-center laptop:flex-wrap tablet:flex-nowrap mobile:flex-wrap items-center">
         <div>
           <h2
             className={classNames(
@@ -21,7 +21,7 @@ export default function DefineCompo(props) {
                 props.value
                   ? "laptop:text-4xl tablet:text-3xl mobile:text-xl mb-4"
                   : "laptop:text-4xl tablet:text-3xl mobile:text-xl mb-1"
-              }`
+              }${props.hstyle} `
             )}
           >
             {props.title}
@@ -33,7 +33,7 @@ export default function DefineCompo(props) {
                 props.value
                   ? "laptop:max-w-4xl tablet:max-w-lg mobile:max-w-auto"
                   : "max-w-2xl"
-              }`
+            } ${props.pstyle}`
             )}
           >
             {props.description}
