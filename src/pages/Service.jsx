@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import ServiceLayout from "../components/service/ServiceLayout";
 
 export default function Service() {
   return (
-    <div>Service</div>
-  )
+    <main>
+      <ServiceLayout />
+    </main>
+  );
 }
